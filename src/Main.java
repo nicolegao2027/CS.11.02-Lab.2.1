@@ -30,7 +30,7 @@ public class Main {
         int roundedPositive = roundPositiveValueToNearestInteger(8.5);
         System.out.println(roundedPositive);
 
-        int roundedNegative = roundNegativeValueToNearestInteger(-8.5);
+        int roundedNegative = roundNegativeValueToNearestInteger(-8.49);
         System.out.println(roundedNegative);
     }
 
