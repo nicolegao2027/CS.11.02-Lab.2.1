@@ -60,10 +60,22 @@ public class Main {
     }
     // 7. roundPositiveValueToNearestInteger
     public static int roundPositiveValueToNearestInteger(double positiveValue) {
-        return (int) Math.round(positiveValue);
+        int rounded;
+        if (positiveValue % 1 < 0.5) {
+            rounded = (int) positiveValue;
+        } else {
+            rounded = (int) positiveValue + 1;
+        }
+        return rounded;
     }
     // 8. roundNegativeValueToNearestInteger
     public static int roundNegativeValueToNearestInteger(double negativeValue) {
-        return (int) Math.round(negativeValue);
+        int rounded;
+        if (negativeValue % 1 > -0.5) {
+            rounded = (int) negativeValue;
+        } else {
+            rounded = (int) negativeValue - 1;
+        }
+        return rounded;
     }
 }
